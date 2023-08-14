@@ -1,0 +1,30 @@
+{% extends 'publicaciones/base.html' %}
+{% load static %}
+
+{% block contenido %}
+    <div class="contenedor-mi">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="imagen-mi-contenedor">
+                    <img src="{% static 'usuarios/img/profile.jpg' %}" alt="Foto de perfil predeterminada" class="rounded-circle imagen-mi">
+                    <div class="d-flex justify-content-center">
+                        <a href="https://www.linkedin.com/in/maxilizarraga" class="text-light me-3 icono-enlace">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                        <a href="https://github.com/MaximilianoLizarraga" class="text-light icono-enlace">
+                            <i class="fa-brands fa-github fa-2x" style="color: #ffffff;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="texto-mi">
+                    <h2 class="titulo-mi">Acerca de mí</h2>
+                    <p>
+                        Hola! mi nombre es Maximiliano Lizarraga tengo 31 años y soy de Capital Federal, Buenos Aires, Argentina. Hace aproximadamente un año, comence a estudiar programacion realizando un curso de Desarrollador Web Fullstack y ahora finalizando Python. A futuro me interesa seguir desarrollandome y estudiando programacion, descubri que es un mundo que me apasiona muchisimo y me interesa poder dedicarme a esto, sin mas que agregar. Los invito a navegar por la web y espero les guste, Muchas gracias.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock contenido %}
